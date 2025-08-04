@@ -73,32 +73,4 @@ const works = [
     iframeSrc: "iFrameLink.html",
     exURL:"https://www.dropbox.com/scl/fi/ronvjqk4rtuk4309w5ikt/.zip?rlkey=tdw6q86nfdmg50wj5aj0e291n&dl=0"
   },
-  {
-    key:"Work_C",
-    title: "制作物C(データなし)",
-    image: "party_match.png",
-    link: "Game1.html?key=Work_C",
-    date: "2025-04-29",
-    genre: "データなし",
-    summary: "データなし",
-    discript:"データなし",
-    operation: "データなし",
-    other: "データなし",
-    ranking: "データなし",
-    iframeSrc: "データなし"
-  },
-  {
-    key:"Work_D",
-    title: "制作物D(データなし)",
-    image: "party_match.png",
-    link: "Game1.html?key=Work_D",
-    date: "2025-04-21",
-    genre: "データなし",
-    summary: "データなし",
-    discript:"データなし",
-    operation: "データなし",
-    other: "データなし",
-    ranking: "データなし",
-    iframeSrc: "データなし"
-  },
 ];
