@@ -350,7 +350,320 @@ footer a{
     color: black;
 }
 
-/* .game p{
-    height: 30px;
-    margin: 0;
-} */
+
+/* 以下は謎解きコンテンツ用 */
+#room_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 20px; 
+}
+
+#room1 {
+    max-width: 100%;
+    position: relative;
+}
+
+#room1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#room2 {
+    max-width: 100%;
+    position: relative;
+}
+
+#room2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#room3 {
+    max-width: 100%;
+    position: relative;
+}
+
+#room3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 基本非表示 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 999;
+}
+
+/* モーダルの中身 */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: flex;
+    margin-top: 100px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 閉じるボタンの見た目 */
+.close-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* クリック範囲 */
+.clickable {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#room1 .clickable {
+    width: 6%;
+    height: 9.5%;
+}
+
+#room2 .clickable {
+    width: 12.1%;
+    height: 33%;
+}
+
+#room3 .clickable {
+    width: 6.7%;
+    height: 10.3%;
+}
+
+/* 各アイテムのクリックエリアの位置 */
+#door {
+    top: 39%;
+    left: 21%;
+}
+
+#book {
+    top: 46%;
+    left: 74.5%;
+}
+
+#box {
+    top: 62%;
+    left: 48.4%;
+}
+
+#pazle {
+    top: 25.8%;
+    left: 41%; 
+}
+
+#door3.clickable {
+    width: 12%;
+    height: 6.5%;
+    top: 44.5%;
+    left: 28.8%; 
+}
+
+#clock {
+    top: 64.2%;
+    left: 60.5%; 
+}
+
+#hint {
+    top: 65%;
+    left: 72.1%; 
+}
+
+/* パスワード入力 */
+#input-area {
+    margin-top: 12px;
+}
+
+#box-answer {
+    padding: 6px;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+}
+
+#box-enter {
+    padding: 6px 12px;
+    margin-left: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#save-key-btn button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#doorDropZone.highlight {
+    border: 2px dashed #00ccff;
+    background-color: rgba(0, 200, 255, 0.1);
+}
+
+.next-button{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#modal_pazle .modal-content {
+    width: 1000px;
+    height: 1400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.4);
+    transform-origin: top center;
+}
+
+#modal_door2_Open .modal-content {
+    width: 500px;        
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.puzzle-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+    width: 1000px;
+    height: 900px;
+    position: relative;
+    border: 1px dashed #999;
+}
+
+.puzzle-container img.draggable {
+    position: absolute;
+    cursor: grab;
+    user-select: none;
+}
+
+input#puzzle-answer {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 50px;
+}
+
+button#puzzle-enter {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 40px;
+}
+
+.draggable {
+    position: absolute;
+    user-select: none;
+    transition: none;
+}
+
+#modal_clock .modal-content {
+    position: relative;
+    width: 500px;        
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal_hint .modal-content {
+    position: relative;
+    width: 500px;        
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal_door3 .modal-content {
+    position: relative;
+    width: 500px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.7);
+    transform-origin: top center;
+}
+
+
+#clock-overlay {
+    width: 400px;
+    height: 170px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px black;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#date-text {
+    height: 75px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#time-text {
+    height: 75px;
+    font-size: 40px;
+    text-align: center;
+}
+
+input#passwordInput {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+button#submitPassword {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 30px;
+}

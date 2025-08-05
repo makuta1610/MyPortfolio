@@ -73,4 +73,22 @@ const works = [
     iframeSrc: "iFrameLink.html",
     exURL:"https://www.dropbox.com/scl/fi/ronvjqk4rtuk4309w5ikt/.zip?rlkey=tdw6q86nfdmg50wj5aj0e291n&dl=0"
   },
+    {
+    key:"Nazotoki",
+    title: "謎解き",
+    image: "img/nazosam.png",
+    link: "Nazo.html",
+    date: "2025-08-05",
+    genre: "謎解き",
+    summary: "謎を解いて部屋を脱出しよう",
+    discript:`各部屋に鍵や扉を開けるパスワードが隠されている
+              謎を解いて、鍵やパスワードを手に入れよう`,
+    operation: "キー入力、マウス操作、画像保存",
+    other: `環境：GoogleCrome
+            アプリ種別：ブラウザゲーム
+            画像の保存や、ドラッグ操作による移動などあり`,
+    ranking: "データなし",
+    iframeSrc: "Nazo.html",
+    exURL:"https://www.dropbox.com/scl/fi/ronvjqk4rtuk4309w5ikt/.zip?rlkey=tdw6q86nfdmg50wj5aj0e291n&dl=0"
+  },
 ];

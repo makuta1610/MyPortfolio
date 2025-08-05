@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html
+    lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            １の部屋
+        </title>
+        <link rel = "stylesheet" href="css/StyleSheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">制作物まとめ</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="List.html">List</a></li>
+                    <li><a href="Nazo.html">Nazo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id = "room_container">
+            <section id = "room1">
+                <img src = "img/nazo/room1.png" alt="背景">
+                <span id = "door" class="clickable"></span>
+                <span id = "book" class="clickable"></span>
+                <span id = "box" class="clickable"></span>
+            </section>
+
+            <section id = "modal_door" class="modal">
+                <div class="modal-content" id="doorDropZone">
+                    <img src = "img/nazo/door.png" alt="ドア">
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+            <section id = "modal_door_Open" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/open_door.png" alt="ドア開">
+                    <span class="next-button">進む</span>
+                </div>
+            </section>
+
+            <section id = "modal_book" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/Click_book.png" alt="本">
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+            <section id = "modal_box" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/click_box.png" alt="ボックス">
+                    <div id="input-area">
+                        <input type="text" id="box-answer" placeholder="パスワード" maxlength="10">
+                        <button id="box-enter">ENTER</button>
+                    </div>
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+            <section id = "modal_openBox" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/Key.png" alt="鍵" id="key-image">
+                    <a id="save-key-btn" href="img/nazo/Key.png" download="key.png">
+                        <button>カギを入手</button>
+                    </a>
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <a href="https://vessica.visulia-g.jp/">
+                <p>株式会社ヴェシカ</p>
+            </a>
+        </footer>
+
+        <script src="js/nazo_room1.js"></script>
+    </body>
+    
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html
+    lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            3の部屋
+        </title>
+        <link rel = "stylesheet" href="css/StyleSheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">制作物まとめ</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="List.html">List</a></li>
+                    <li><a href="Nazo.html">Nazo</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id = "room_container">
+            <section id = "room3">
+                <img src = "img/nazo/room3.png" alt="背景">
+                <span id = "door3" class="clickable"></span>
+                <span id = "clock" class="clickable"></span>
+                <span id = "hint" class="clickable"></span>
+            </section>
+
+            <section id = "modal_door3" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/door3.png" alt="ドア">
+                <input type="text" id="passwordInput" placeholder="パスワードを入力">
+                <button id="submitPassword">送信</button>
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+            <section id = "modal_door2_Open" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/open_door2.png" alt="ドア開">
+                    <span class="next-button">進む</span>
+                </div>
+            </section>
+
+            <section id = "modal_clock" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/clock.png" alt="時計">
+                    <div id="clock-overlay">
+                        <div id="date-text"></div>
+                        <div id="time-text"></div>
+                    </div>
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+
+            <section id = "modal_hint" class="modal">
+                <div class="modal-content">
+                    <img src = "img/nazo/hint.png" alt="ヒント">
+                    <span class="close-button">閉じる</span>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <a href="https://vessica.visulia-g.jp/">
+                <p>株式会社ヴェシカ</p>
+            </a>
+        </footer>
+
+        <script src="js/nazo_room3.js"></script>
+    </body>
+    
+
+</html>
