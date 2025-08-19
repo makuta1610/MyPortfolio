@@ -91,4 +91,20 @@ const works = [
     iframeSrc: "Nazo.html",
     exURL:"https://www.dropbox.com/scl/fi/ronvjqk4rtuk4309w5ikt/.zip?rlkey=tdw6q86nfdmg50wj5aj0e291n&dl=0"
   },
+    {
+    key: "shogi",
+    title: "ブロック崩し",
+    image: "img/shogi.png",
+    link: "Game1.html?key=shogi",
+    date: "2025-08-19",
+    genre: "ボードゲーム",
+    summary: "オンライン2人対戦用の将棋です",
+    discript:`オンライン2人対戦用の将棋です
+              4桁のIDでルームを作成し、2人参加することでゲームができます。`,
+    operation: "クリックで駒の移動先を選択",
+    other: `二歩は禁止していますが、打ち歩詰めや先日手などは禁止できていません。
+            Top画面のRenameからプレイヤー名を変更できます`,
+    ranking: "ランキング機能なし",
+    iframeSrc: "https://itch.io/embed-upload/14480114?color=333333"
+  },
 ];
