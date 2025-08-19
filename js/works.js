@@ -93,7 +93,7 @@ const works = [
   },
     {
     key: "shogi",
-    title: "ブロック崩し",
+    title: "将棋",
     image: "img/shogi.png",
     link: "Game1.html?key=shogi",
     date: "2025-08-19",
@@ -105,6 +105,6 @@ const works = [
     other: `二歩は禁止していますが、打ち歩詰めや先日手などは禁止できていません。
             Top画面のRenameからプレイヤー名を変更できます`,
     ranking: "ランキング機能なし",
-    iframeSrc: "https://itch.io/embed-upload/14480114?color=333333"
+    iframeSrc: "https://itch.io/embed-upload/14710592?color=333333"
   },
 ];
