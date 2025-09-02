@@ -105,6 +105,6 @@ const works = [
     other: `二歩は禁止していますが、打ち歩詰めや先日手などは禁止できていません。
             Top画面のRenameからプレイヤー名を変更できます`,
     ranking: "ランキング機能なし",
-    iframeSrc: "https://itch.io/embed-upload/14710592?color=333333"
+    iframeSrc: "https://itch.io/embed-upload/14851935?color=333333"
   },
 ];
